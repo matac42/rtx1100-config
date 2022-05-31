@@ -3,7 +3,7 @@
 source .env
 
 tftp <<EOF
-connect 10.0.2.81
+connect $ROUTER_IP
 mode binary
 put config.txt config0/$ROUTER_PW
 quit
