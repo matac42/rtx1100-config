@@ -1,0 +1,34 @@
+#8 3 94 0
+login password encrypted EpSmI122iNTKpbJiImwOE/31ezz/fLMa
+administrator password encrypted r2XIIVtEDRFuz1iWEKrEJps7XORiK6El
+login user matac encrypted kcrt4CrcOLr.bvmwqRorvDT1gAoIhzA/
+console character ascii
+console prompt SW1
+login timer 600
+lan type lan1 port-based-ks8995m=divide-network
+ip lan1.1 address 192.168.10.1/24
+ip lan1.2 address 192.168.20.1/24
+ip lan1.3 address 192.168.30.1/24
+ip lan1.4 address 192.168.40.1/24
+ip lan2 address dhcp
+ip lan2 nat descriptor 1
+ip lan3 address 192.168.50.1/24
+pp disable all
+no tunnel enable all
+nat descriptor type 1 masquerade
+nat descriptor address outer 1 10.0.2.81
+nat descriptor masquerade static 1 1 10.0.2.81 tcp www
+nat descriptor masquerade static 1 2 10.0.2.81 tcp 22
+nat descriptor masquerade static 1 3 10.0.2.81 tcp tftp
+tftp host any
+dhcp service server
+dhcp server rfc2131 compliant except remain-silent
+dhcp scope 1 192.168.10.2-192.168.10.191/24
+dhcp scope 2 192.168.20.2-192.168.20.191/24
+dhcp scope 3 192.168.30.2-192.168.30.191/24
+dhcp scope 4 192.168.40.2-192.168.40.191/24
+dhcp scope 5 192.168.50.2-192.168.50.191/24
+dns server 10.100.10.10
+httpd host any
+sshd service on
+sshd host key generate 488165920 4tjtQGEoAHNIV0OhOvmNe93nPYpGx48VbPvP6iKdHpQ9QChXPgDKu/Goxt6LrhAbHyQxopw4wp3ytdIJYr+UTv/SUNP/Lq69XJrTSNVOSs1MGlMnelUhBdB821qtbqqM/6qM0ckrM7bmQGLAKQm+9m5T7Fz1D9GDG0ljPFgi/vq0WgCAYBrcey9k+6wnxgPMuXNsFUbjKlzirPZ66n+A+kue+0P13qyG4YyAnbVQrf1NCTNONWPn9ZI3tyvGXdlIT2neb2DYOlOlsFxxSHJ5Qe6EpcOpvZ3DdEqMg0bRb7dHkUsG4yNoOLO3h7OPPULjKdt4HqpLoLhG4TgP0KlMQqlQGbC0mGPGw+j+ZaLoSy0OnPSIRWaT3Nms0U142Nw5hmzxWwHgdYiV4sCQKZzokiUz+ezQE8TAWjmk29YEJwufQIML4xRtrfsIALyUm4iH8mqTOjLVpzYxMXLFCT9MhnOcPgaLjZAMFogtlNK2K/tP2nEN+E7shuyeMF1B7XLduPZcqMLkCiY7SVYtFEP1Ug4qNGSqJ1R35vm7OwTBLOrk5XE33l6x5Jfi1PQzG6IF8w/Ktg3nKsO9FNM9oC2mpzw9NyOpaXeIUiRMYcZychlvzzkpf7UfVk5vECYCt1O18z7Vgrds7U/xeuDTl9YlGQJetl8SoGdBsMlU5f33TAFJ6EfbhnHJuTfEBwXzANSYZC0ayyphtlFRhzMyq/2pdruKS/sQcXaBCtaKg7P6GY5JrjGsVJH01W/IVXYsBWwYAJJYeLE2+4+eLCuxyfYf3Bp3xxp4TVOxLkiTsKz684wJHoIkK8p/7ce3XQ1MfV+I vgcIziMkQtp8pjnu2M3mEcO9bSo9/dr+us9W0PMCyJskxr7nJQOWot1yjxlxUbTicD5nasritMGWAZzfQQpMYWhqTuycwT1B/wuj/hTnWJ3Srv5DhFu2lc3+hkHcvO/gKgzCZHIOeqkb/CTMpSTsqXwBa2yLxKjBXSaCqFkhKOQU4yFPWIhIYsJbKXBQKXzQhigz9z458nW0Pp4RoFt4ZigvhM92/P0Fqt/AaqTF+GeWgcfV3JOQSj8BB+DicqwBh8vsHwI7MjIajwBeX+1cPImsmReYQmY9sZQF7bikyVnYQDbSKMRt09fvLFlfHGFJTIwd4Up3TMKXHsX6Y5YonTxTXO25ymPZRF7o7dG+rcbxQZh6Jmifixn7eBpJZTp+lCcbxBGLajJlyH222dTqAXAEaXAEhOFh7Qo5W7vW6MdbBdJsI8tmLb/UveB/141CVVbRWGPqG8ZMIH13BD/4SIo4N9YSJe5vriPkKiDNJLxK7UatFeHpnKP8DTpjgBkGdOb3NiFQEtsK2pSrvjDCt5A1M3S8FlxC2bnliGhARSYrdVHnz2bcnl6MClPs/W2L84Fnae+A1k+nMujCcKL9J1KNhTVE0Iu8S6MjSifrS/o=
